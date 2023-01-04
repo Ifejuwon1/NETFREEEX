@@ -68,7 +68,7 @@ movieUrl = 'https://api.themoviedb.org/3/discover/movie?&api_key=06f282885b245bb
 			innerpic.src = ` ${imagePath}` + element.poster_path
 			genre.textContent = element.genre_ids
 			overview.textContent = element.overview
-			console.log(backgroundOverlay);
+			rating.innerHTML = element.vote_average + '/10'
 		   })
 	});
 
@@ -117,7 +117,7 @@ async function fetchTvShow(){
 		innerpic.src = ` ${imagePath}` + element.poster_path
 		genre.textContent = element.genre_ids
 		overview.textContent = element.overview
-		console.log(backgroundOverlay);
+		rating.innerHTML = element.vote_average + '/10'
 	   })
    });
 
