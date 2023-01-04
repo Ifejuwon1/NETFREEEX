@@ -175,6 +175,7 @@ img{
     padding: 20px 30px;
     background-color: rgba(128, 128, 128, 0.164);
     border-radius: 10px;
+    max-height: fit-content;
 }
 
 .bg-image{
